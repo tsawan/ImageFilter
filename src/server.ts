@@ -48,6 +48,10 @@ import { filterImageFromURL, deleteLocalFiles } from './util/util';
       console.log(`path is ${file_path}`);
       return res
         .status(200)
+        .on('finish', () => {
+          console.log('deleting file');
+          deleteLocalFiles([file_path]);
+        })
         .sendFile(file_path)
     }, err => {
       console.log(err.message)
