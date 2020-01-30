@@ -1,5 +1,17 @@
 # Udagram Image Filtering Microservice
 
+root url: http://imagefilter-dev.us-east-1.elasticbeanstalk.com/
+
+no url: http://imagefilter-dev.us-east-1.elasticbeanstalk.com/filteredImage?image_url
+
+invalid url: http://imagefilter-dev.us-east-1.elasticbeanstalk.com/filteredImage?image_url=https://dynaimage.cdn.cnn.com/cnn/digital-images/dummy.jpg
+
+working url: http://imagefilter-dev.us-east-1.elasticbeanstalk.com/filteredImage?image_url=https://dynaimage.cdn.cnn.com/cnn/digital-images/org/1fc7ff90-67e4-447c-a080-e5d1b8aa0e03.jpg
+
+
+-----------------------------
+
+
 Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.
 
 The project is split into three parts:
